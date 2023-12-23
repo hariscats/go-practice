@@ -6,14 +6,11 @@ import (
 )
 
 func main() {
-	switch num := rand.Intn(10); num {
-	case 0:
+	if num := rand.Intn(3); num == 0 {
 		fmt.Println("Space Adventures")
-	case 1:
+	} else if num == 1 {
 		fmt.Println("SpaceX")
-	case 2:
+	} else {
 		fmt.Println("Virgin Galactic")
-	default:
-		fmt.Println("Random spaceline #", num)
 	}
 }
