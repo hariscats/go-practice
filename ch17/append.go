@@ -9,5 +9,8 @@ func main() {
 
 	dwarfs = append(dwarfs, "Orcus")
 
+	// append multiple elements
+	dwarfs = append(dwarfs, "Salacia", "Quaoar", "Sedna")
+
 	fmt.Println(dwarfs)
 }
